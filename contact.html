@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#111; position:sticky; top:0; z-index:100; }
+    nav img { width:120px; }
+    nav ul { list-style:none; display:flex; }
+    nav ul li { margin-left:25px; }
+    nav ul li a { color:#fff; text-decoration:none; font-weight:bold; transition:0.3s; }
+    nav ul li a:hover { color:#f0a500; }
+
+    .sub-header { text-align:center; color:#fff; padding:150px 20px; background: url('contact-banner.jpg') no-repeat center center/cover; position:relative; }
+    .sub-header h1 { font-size:50px; background: rgba(0,0,0,0.5); display:inline-block; padding:15px 30px; border-radius:10px; }
+
+    .contact { padding:50px; max-width:800px; margin:0 auto; }
+    .contact h1 { text-align:center; margin-bottom:30px; }
+    .contact-form { display:flex; flex-direction:column; gap:15px; }
+    .contact-form input, .contact-form textarea { padding:12px; border-radius:5px; border:1px solid #ccc; width:100%; }
+    .contact-form button { padding:15px; border:none; border-radius:5px; background:#f0a500; color:#fff; font-weight:bold; cursor:pointer; transition:0.3s; }
+    .contact-form button:hover { background:#fff; color:#f0a500; border:1px solid #f0a500; }
+
+    iframe { width:100%; height:350px; border:0; margin-top:30px; border-radius:10px; }
+
+    .footer { background:#111; color:#fff; padding:40px 20px; text-align:center; }
+    .footer .icons i { margin:0 10px; font-size:20px; color:#f0a500; cursor:pointer; transition:0.3s; }
+    .footer .icons i:hover { color:#fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav>
+    <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="course.html">Course</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="sub-header">
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h1>Get in Touch</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019842441872!2d-122.08560818468158!3d37.42206577982567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5f94f9b0b17%3A0x84b50aa9c6e51d2!2sGoogleplex!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <p>&copy; 2025 World's Biggest University. Made with <i class="fa-solid fa-heart"></i> by JARVIS--CORE</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+  </section>
+
+</body>
+</html>
